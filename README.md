@@ -18,7 +18,7 @@ customerModel: {
   "quoted_amount": "Number",
   "project_description": "String",
   "priority": "Number",
-  "created_at": "String"
+  "created_at": "String",
 }
 ```
 
@@ -31,7 +31,7 @@ customerModel: {
     "is_recurring": "Boolean",
     "clocked_time": "Number",
     "description": "Number",
-    "create_at": "Number"
+    "create_at": "Number",
   }
 ```
 
@@ -46,8 +46,7 @@ userModel: {
   "company_logo": "url", // not required
   "invoices": ["InvoiceModel[Array]"],
   "company_address": "String",
-  "created_at": "Number"
-
+  "created_at": "Number",
 }
 ```
 
@@ -60,6 +59,6 @@ userModel: {
     "customer_address": "String",
     "contractor_address": ["userModel.company_address"],
     "work_completed": ["Array"],
-    "created_at": "Number"
+    "created_at": "Number",
   }
 ```

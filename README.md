@@ -45,13 +45,14 @@ This project will rely on a Restful API.
 {
   "userModel": {
     "Id": "Number",
-    "user_name": "String", // username can be taken from OAuth if used.
-    "password": "String", // if login with OAuth - password not required.
+    "user_name": "String",
+    "password": "String",
     "job_title": "String",
-    "company_logo": "url", // not required
+    "company_logo": "url",
     "invoices": ["InvoiceModel[Array]"],
     "company_address": "String",
-    "created_at": "Number"
+    "created_at": "Number",
+    "_comment": "Password not required if using OAuth. Company logo is optional."
   }
 }
 ```
